@@ -1,0 +1,27 @@
+-----------------------------------------INFORMACIÓN DE REDUX
+
+                Async Middlewares-redux : https://www.npmjs.com/package/redux-thunk
+                Redux Devtools docs : https://github.com/zalmoxisus/redux-devtools-extension#usage
+                Redux unfo : https://es.redux.js.org/docs/basico/acciones.html
+
+
+
+---------------------------------------INSTALACIONES
+                1. node-sass
+                2. react-redux
+                3. redux
+                4. redux-thunk : procesos asyncronos con redux
+                5. validator
+                6. alertas personalizadas: https://sweetalert2.github.io/
+
+
+
+
+
+
+
+
+
+
+
+
