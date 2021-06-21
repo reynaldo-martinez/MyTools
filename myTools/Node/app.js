@@ -1,10 +1,13 @@
 import express from 'express';
 import morgan from 'morgan';
+import dotenv from 'dotenv'  
+import cors from 'cors'
 
 
 export class Server {
-  constructor(port) {
-    this.port = port;
+  constructor() {
+    dotenv.config()
+    this.port = process.env.PORT;
     this.app = express();
 
     this.settings();
@@ -29,6 +32,7 @@ export class Server {
     this.app.use(morgan("dev"));
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: false }));
+     this.app.use(cors())
   }
 
   //server routes
