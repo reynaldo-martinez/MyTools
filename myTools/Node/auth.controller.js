@@ -85,3 +85,18 @@ export async function signIn(req, res){
     }
     
 }
+
+
+
+export async function validateJWT(req, res){
+  const id_user = req.id_user
+  const email = req.email
+
+  const token = await getToken(id_user, req.email)
+  
+  res.status(200).json({
+    ok : true,
+    msg : 'correct',
+    token
+  })
+}
